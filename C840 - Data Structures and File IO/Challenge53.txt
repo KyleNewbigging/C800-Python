@@ -1,0 +1,6 @@
+What is my name?
+kyle
+What is my fav colour?
+green
+What year was I born?
+2001

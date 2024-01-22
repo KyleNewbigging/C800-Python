@@ -1,0 +1,12 @@
+hippo:calf
+dog:pup
+kangaroo:jo
+monkey:infa
+owl:owlet
+parrot:chic
+rabbit:bunn
+rat:pup
+cow:calf
+skunk:kit
+sheep:lamb
+kyle:kyle jr
