@@ -1,0 +1,26 @@
+Make: Toyota
+Model: Corolla
+Year: 2010
+Price: 15000
+Used: True
+Mileage: 4500
+Doors: 4
+Available: True
+
+Make: Honda
+Model: Civic
+Year: 2015
+Price: 17000
+Used: True
+Mileage: 54500
+Doors: 4
+Available: True
+
+Make: Chevrolet
+Model: Venture
+Year: 2004
+Price: 5000
+Used: True
+Mileage: 154500
+Doors: 4
+Available: True
