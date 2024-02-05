@@ -13,11 +13,24 @@ class Snake:
        return pygame.draw.rect(self.screen, Config["colours"]["yellow"],(self.x_position,self.y_position,self.snakeWidth,self.snakeHeight))
     def eat(self):
         self.size += 1
+        self.body.append([-100,-100])
+        self.body.append([-100,-100])
+        self.body.append([-100,-100])
+        self.body.append([-100,-100])
+        self.body.append([-100,-100])
+        
         print(self.size)
     def draw_body(self):
-        pass
+        colourCounter = 255
+        for segment in self.body:
+            colourCounter-= 30
+            if colourCounter < 0:
+                colourCounter = 255
+            pygame.draw.rect(self.screen, (255-colourCounter,colourCounter,255-colourCounter), (segment[0], segment[1], self.snakeWidth, self.snakeHeight))
+        return self.body
     def move(self,xchange,ychange):
         for i in range(len(self.body)):
+            print(len(self.body)-1-i)
             if len(self.body)-1-i > 0:  
                 self.body[len(self.body)-1-i][0] = self.body[len(self.body)-2-i][0]
                 self.body[len(self.body)-1-i][1] = self.body[len(self.body)-2-i][1]

@@ -53,7 +53,7 @@ class Game:
                 bottom_wall = pygame.draw.rect(self.screen, Config["colours"]["black"],(0,(gameHeight-bumperSize),gameWidth,bumperSize))
                 appleRect = apple.get_rect()
                 keys_pressed = pygame.key.get_pressed()
-                snake.draw_body()
+                snakeBody = snake.draw_body()
                 snakeRect = snake.get_rect()
                 if direction == 0:
                     if keys_pressed[pygame.K_a]:
