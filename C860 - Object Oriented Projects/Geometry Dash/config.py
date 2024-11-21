@@ -1,0 +1,28 @@
+Config = {
+    "game": {
+        "caption" : "Snake",
+        "width" : 800,
+        "height" : 600,
+        "fps": 20,
+        "bumper_size": 20,
+        "font": "./PressStart2P.tff"
+    },
+    "snake" :{
+        "height": 20,
+        "width" : 20,
+        "speed": 10
+    },
+    "spike": {
+        "width" : 50,
+        "height" : 50
+    },
+    "colours" : {
+        "white":(255,255,255),
+        "black" : (60,60,60),
+        "apple-red":(255,0,0),
+        "red":(200,95,30),
+        "green" : (73, 190, 37),
+        "blue":(60,100,150),
+        "yellow": (255,255,0),
+    }
+}  

@@ -67,12 +67,11 @@ class Game:
                     snake.move(0,-speed)
                     if snakeRect.colliderect(top_wall):
                         self.gameOver()
-                    for i in range(5,len(snakeBody)):
-                        if snakeRect.colliderect(snakeBody[i]):
-                            self.gameOver()
+                    
                 elif direction == 1:
                     if keys_pressed[pygame.K_w]:
                         direction = 0
+                        
                     elif keys_pressed[pygame.K_s]:
                         direction = 2
                     snake.move(speed,0)
@@ -93,6 +92,9 @@ class Game:
                         direction = 2
                     snake.move(-speed,0)
                     if pygame.Rect.colliderect(snakeRect,left_wall):
+                        self.gameOver()
+                for i in range(4,len(snakeBody)):
+                    if snakeRect.colliderect(snakeBody[i]):
                         self.gameOver()
                 if snakeRect.colliderect(appleRect):
                     apple.randomize()
